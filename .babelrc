@@ -1,0 +1,13 @@
+{
+  "presets": ["env", "es2015", "stage-0", "react"],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-decorators",
+    ["transform-runtime", {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true
+    }],
+    ["babel-plugin-root-import", { "rootPathSuffix": "src/" }]
+  ]
+}

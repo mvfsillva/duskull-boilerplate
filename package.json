@@ -1,0 +1,20 @@
+{
+  "name": "duskull-react-boilerplate",
+  "version": "1.0.0",
+  "description": "![Duskull](https://raw.githubusercontent.com/mvfsillva/duskull-react-boilerplate/master/.github/duskull.jpeg?token=AEXgDMk00ls13G-4FOEvaOH_FXltRW_-ks5ba9tqwA%3D%3D)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvfsillva/duskull-react-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvfsillva/duskull-react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/mvfsillva/duskull-react-boilerplate#readme"
+}

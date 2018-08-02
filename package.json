@@ -1,5 +1,5 @@
 {
-  "name": "duskull-react-boilerplate",
+  "name": "duskull-boilerplate",
   "version": "1.0.0",
   "author": "Marcus Silva <mvfsillva@gmail.com>",
   "license": "MIT",
@@ -17,22 +17,44 @@
     "test:watch": "jest --watch",
     "coveralls": "npm run test:coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage",
     "clean": "rimraf build",
-    "build:analyzer": "cross-env ANALYZER=true npm run build",
     "build": "cross-env NODE_ENV=production BABEL_ENV=production webpack --progress --config webpack/prod.config -p"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mvfsillva/duskull-react-boilerplate.git"
+    "url": "git+https://github.com/mvfsillva/duskull-boilerplate.git"
   },
   "bugs": {
-    "url": "https://github.com/mvfsillva/duskull-react-boilerplate/issues"
+    "url": "https://github.com/mvfsillva/duskull-boilerplate/issues"
   },
-  "homepage": "https://github.com/mvfsillva/duskull-react-boilerplate#readme",
+  "jest": {
+    "verbose": true,
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleNameMapper": {
+      "^src/([^\\.]*)$": "<rootDir>/src/$1"
+    },
+    "setupFiles": [
+      "<rootDir>/config/test/enzyme.theme.js",
+      "<rootDir>/config/test/fetch.setup.js",
+      "<rootDir>/config/test/jsdom.setup.js"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/config/test/enzyme.setup.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/build/",
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "homepage": "https://github.com/mvfsillva/duskull-boilerplate#readme",
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-hot-loader": "3",
+    "react-hot-loader": "^3.1.3",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "styled-components": "^3.3.3",
@@ -87,8 +109,7 @@
     "stylelint-config-standard": "^18.2.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.3.2",
-    "webpack": "3",
-    "webpack-bundle-analyzer": "^2.13.1",
-    "webpack-cli": "2"
+    "webpack": "^3.12.0",
+    "webpack-cli": "^2.0.6"
   }
 }

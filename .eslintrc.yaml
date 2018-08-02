@@ -1,0 +1,10 @@
+---
+  root: true
+  parser: babel-eslint
+  extends:
+    - plugin:prettier/recommended
+    - prettier/react
+  env:
+    browser: true
+  settings:
+    import/resolver: webpack

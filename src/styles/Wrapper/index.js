@@ -14,12 +14,4 @@ const Wrapper = styled.div`
   }
 `
 
-const HeaderWrapper = styled.div`
-  margin-top: 3rem;
-  font-family: ${props => props.theme.fonts.primary};
-  @media screen and (max-width: 640px) {
-    padding-top: 3.25rem;
-  }
-`
-
-export { Wrapper, HeaderWrapper }
+export default Wrapper

@@ -1,5 +1,6 @@
 import React from 'react'
 import { injectGlobal, ThemeProvider } from 'styled-components'
+import Routes from './routes'
 import theme from './theme'
 
 injectGlobal`
@@ -13,7 +14,7 @@ injectGlobal`
 
 const App = () => (
   <ThemeProvider theme={theme}>
-    <h1>Boilerplate</h1>
+    <Routes />
   </ThemeProvider>
 )
 

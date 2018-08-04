@@ -38,4 +38,10 @@ $ yarn format
 $ yarn format:check
 ```
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
 ## Acknowledgments
+
+This boilerplate is inspired by [Fernando Daciuk.](https://github.com/fdaciuk/workflow-reactjs)

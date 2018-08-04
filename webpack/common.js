@@ -20,7 +20,7 @@ module.exports = {
   },
 
   htmlPluginConfig: {
-    title: 'The Dogs',
+    title: 'Duskull',
     template: join(paths.public, 'index.html'),
   },
 

@@ -17,7 +17,8 @@
     "test:watch": "jest --watch",
     "coveralls": "npm run test:coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage",
     "clean": "rimraf build",
-    "build": "cross-env NODE_ENV=production BABEL_ENV=production webpack --progress --config webpack/prod.config -p"
+    "build": "cross-env NODE_ENV=production BABEL_ENV=production webpack --progress --config webpack/prod.config -p",
+    "prepush": "npm run test"
   },
   "repository": {
     "type": "git",

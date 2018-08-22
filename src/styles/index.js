@@ -1,6 +1,6 @@
-import Content from './Content'
-import FullContainer from './FullContainer'
-import ImageRender from './ImageRender'
-import Wrapper from './Wrapper'
+import Content from './content'
+import FullContainer from './full-container'
+import ImageRender from './image-render'
+import Wrapper from './wrapper'
 
 export { Content, FullContainer, ImageRender, Wrapper }

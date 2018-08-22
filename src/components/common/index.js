@@ -1,4 +1,4 @@
-import If from './If'
-import Either from './Either'
+import If from './if'
+import Either from './either'
 
 export { If, Either }

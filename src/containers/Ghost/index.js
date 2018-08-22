@@ -1,6 +1,6 @@
 import React from 'react'
-import Title from '~/components/Title'
-import Content from '~/styles/Content'
+import Title from '~/components/title'
+import Content from '~/styles/content'
 
 const Ghost = () => (
   <Content>
